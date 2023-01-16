@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>từ điển</title>
+</head>
+<body>
+<label><input id="nhap" type="text"></label>
+<button type="button" onclick="tim()">tìm kiếm</button>
+<script>
+    function tim() {
+    let a = ["chuối", "táo", "dừa", "cam"];
+    let b = ["banana", "apple", "coconut", "orange"];
+    let c = document.getElementById("nhap").value;
+    let d = 0;
+    let e = "";
+        for (let i = 0; i < b.length; i++) {
+            if (c === b[i]) {
+                d = i;
+            }
+            console.log(d);
+            for (let j = 0; j < a.length; j++) {
+                if (d === j) {
+                    e = a[j];
+            }
+            }
+        } document.write(e);
+    }
+</script>
+</body>
+</html>
