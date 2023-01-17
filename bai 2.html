@@ -5,7 +5,7 @@
     <title>bai 2</title>
 </head>
 <body>
-<h5>bai 1</h5>
+<!--<h5>bai 1</h5>-->
 <!--<script>-->
 <!--    let a = [[1, 3, 5, 7],-->
 <!--        [2, 4, 6, 8],-->
@@ -48,9 +48,30 @@
 
 <!-- }alert("mang có "+c.join()+"ký tự");-->
 <!-- </script>-->
-bai 5
+<!--bai 5-->
+<!--<script>-->
+<!--    let a = prompt("nhap a");-->
+<!--    let b = prompt("nhap b");-->
+<!--    sosanh()-->
+<!--    function sosanh() {-->
+<!--        if (a == b) {-->
+<!--            document.write("giong");-->
+<!--            return true-->
+<!--        } else {-->
+<!--            document.write("khac");-->
+<!--            return false;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+bai 6
 <script>
-
+    let a=prompt("nhap a");
+    let b=a.split("");
+    for (let i = 0; i <b.length ; i++) {
+        if (b[i]==="-"){
+            b[i]="_";
+        }
+    }alert(b.join(""))
 </script>
 </body>
 </html>
